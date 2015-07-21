@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "babel": "babel --watch lib/js --out-dir public/js"
+  }
+}

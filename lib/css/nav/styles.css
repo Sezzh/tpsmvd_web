@@ -1,9 +1,0 @@
-.NavigationContainer {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.NavigationContainer-item {
-  text-decoration: none;
-  list-style-type: none;
-}

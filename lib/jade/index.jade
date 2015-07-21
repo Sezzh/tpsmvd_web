@@ -8,28 +8,8 @@ head
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,200")
     link(rel="stylesheet", href="./css/styles.css")
 body.MainContent
-    header.HeaderContainer
-        figure(class="HeaderContainer-imgContainer")
-            img(class="HeaderContainer-logo", src="./assets/logo.png", alt="TPSMVD")
-        nav(class="NavigationContainer")
-            ul(class="NavigationContainer-list")
-                li(class="NavigationContainer-item")
-                    a(href="#", class="NavigationContainer-link") Inicio
-                li(class="NavigationContainer-item")
-                    a(href="#", class="NavigationContainer-link") Contacto
-                li(class="NavigationContainer-item")
-                    a(href="#", class="NavigationContainer-link") Ubicación
-    section(class="SectionSliderContainer")
-        div(class="SectionSliderContainer-img")
-            article(class="SectionSliderContainer-sliderDescription")
-                figure(class="SectionSliderContainer-sliderDescription-figure")
-                    img(src="./assets/logo_aspel.png", alt="Aspel distribuidor", class="SectionSliderContainer-sliderDescription-figureImg")
-                h2(class="SectionSliderContainer-sliderDescriptionTitle") Asesoria en sistemas Aspel.
-                p(class="SectionSliderContainer-sliderDescriptionMessage") SAE, COI, NOI, PROD y BANCOS, instalación de sistemas.
-    section(class="SectionDrescriptionContainer")
-        h3(class="SectionDrescriptionContainer-aboutUs") Sobre nosotros
-        p(class="SectionDrescriptionContainer-description") TODO PARA SU MICRO VALLE DORADO, S.A. DE C.V. es una consultoría de sistemas y redes, con sede en México, que le ofrece servicios integrales para su empresa o negocio, nos especializamos en la aplicación de soluciones tecnológicas para mejorar su productividad y reducir costos en su negocio.
-        p(class="SectionDrescriptionContainer-description") Contamos con profesionales certificados para crear y desarrollar mejores y más rápidas soluciones en su organización, mediante el uso de aplicaciones tecnológicas confiables, eficientes y fáciles de usar. Nuestros ingenieros crearán o darán mantenimiento profesional a su sistema de redes. Conozca los productos y servicios que le ofrecemos.
+    include ./header/template.jade
+    include ./sectionslider/template.jade
+    include ./sectiondescription/template.jade
     include ./footer/template.jade
-    script(src="js/app.js")    
-    
+    script(src="js/app.js")

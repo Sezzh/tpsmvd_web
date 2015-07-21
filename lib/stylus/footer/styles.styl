@@ -3,6 +3,7 @@
     color primaryFontLightColor
     font-family 'Titillium Web'
     display flex
+    justify-content space-between
     flex-wrap wrap
     overflow hidden
     &-article
@@ -17,6 +18,8 @@
         margin 0
         font-size 1.4rem
         font-weight 200
+    &-addressContainer
+        margin-bottom 0
     &-list
         margin 0
         padding 0
@@ -30,3 +33,15 @@
         vertical-align middle
     &-number
         margin 0 0 0 1.7rem
+
+@media (min-width 768px)
+    .FooterContainer
+        flex-wrap nowrap
+        justify-content space-between
+        &-article
+            margin 0 1rem
+            padding 1rem 0
+
+@media (min-width 900px)
+    .FooterContainer
+        padding 0 20%

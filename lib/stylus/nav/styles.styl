@@ -1,4 +1,5 @@
 .NavigationContainer
+    box-sizing border-box
     font-family 'Titillium Web'
     font-size 1.2rem
     font-weight bold
@@ -19,38 +20,36 @@
         text-decoration none
         color primaryFontDarkColor
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-    display none
-    line-height 60px
-    margin 0
-    margin-right 1rem
-    padding 0
-    width 40%
-    z-index 5
-    &-list
-        width 80%
-        display flex
-        justify-content space-between
-        margin 0 auto
+@media (min-width 900px)
+    .NavigationContainer
+        overflow hidden
+        background rgba(255,255,255,0)
+        height 60px
+        margin 0
         padding 0
-    &-item
-        text-decoration none
-        list-style-type none
-    &-link
-        font-family 'Titillium Web'
-        font-size 1.2rem
-        text-decoration none
-        color primaryFontDarkColor
-*/
+        width 35%
+        z-index 5
+        &-list
+            width 80%
+            height 100%
+            display flex
+            align-items center
+            margin 0 auto
+            padding 0
+        &-item
+            list-style-type none
+            margin 0
+            padding 0
+            text-align center
+            text-decoration none
+            width 100%
+            &:hover > .NavigationContainer-link
+                text-shadow 0px 0px 30px rgba(203,35,39,.5)
+        &-link
+            text-shadow 0px 0px 10px rgba(14,14,14,.2)
+            width 100%
+            font-family 'Titillium Web'
+            font-size 1.2rem
+            text-decoration none
+            color primaryFontDarkColor
+            transition text-shadow .5s ease

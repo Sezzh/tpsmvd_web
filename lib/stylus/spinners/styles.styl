@@ -1,0 +1,17 @@
+.spinner
+    width 2rem
+    height 2rem
+    margin 35vh auto
+    border-radius 50%
+    -webkit-animation circleLoaderAnimation .8s infinite ease-in-out
+
+@keyframes circleLoaderAnimation
+    0%
+        transform rotateX(0deg)
+        background logoRedColor
+    50%
+        transform rotateX(180deg)
+        background primaryGrayColor
+    100%
+        tranform rotateX(0deg)
+        background logoRedColor

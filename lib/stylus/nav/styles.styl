@@ -8,19 +8,36 @@
     background frostBackgroundColor
     z-index -1
     overflow hidden
-    transition all .5s ease
+    transition all .3s ease
     &-list
         margin 0
         padding 0
+        height 100%
     &-item
-        padding .5rem 2rem
+        box-sizing border-box
+        border-bottom 1px solid rgba(221,221,221,.3)
+        text-shadow 0 0 5px rgba(221,221,221,.8)
         display block
+        height 25%
         margin 0 auto
+        &:last-child
+            border-bottom none
     &-link
+        display block
+        line-height 47px
+        width 95%
+        height 100%
+        padding-left 5%
         text-decoration none
         color primaryFontDarkColor
+        transition color .2s ease
+        transition background .2s ease
+        &:hover
+            background primaryGrayColor
+            color primaryFontLightColor
+            text-shadow 0 0 5px rgba(5,5,5,.8)
 
-@media (min-width 900px)
+@media (min-width 57rem)
     .NavigationContainer
         overflow hidden
         background rgba(255,255,255,0)
@@ -37,15 +54,18 @@
             margin 0 auto
             padding 0
         &-item
+            border none
+            box-sizing border-box
+            height 100%
             list-style-type none
             margin 0
             padding 0
             text-align center
             text-decoration none
             width 100%
-            &:hover > .NavigationContainer-link
-                text-shadow 0px 0px 30px rgba(203,35,39,.5)
         &-link
+            line-height 60px
+            padding 0
             text-shadow 0px 0px 10px rgba(14,14,14,.2)
             width 100%
             font-family 'Titillium Web'
@@ -53,3 +73,5 @@
             text-decoration none
             color primaryFontDarkColor
             transition text-shadow .5s ease
+            transition color .2s ease
+            transition background .2s ease

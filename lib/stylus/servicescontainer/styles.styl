@@ -1,6 +1,5 @@
 .ServicesContainer
     margin 0 auto
-    margin-top 60px
     width 100%
     height auto
     font-family 'Titillium Web'
@@ -27,9 +26,25 @@
     .ServicesContainer
         display flex
         flex-wrap wrap
-        justify-content flex-end
+        justify-content flex-start
         &-article
             width 40%
+            padding-bottom 0
+            &:nth-child(even)
+                color primaryFontLightColor
+                background primaryGrayColor
+            &:nth-child(odd)
+                color primaryFontDarkColor
+                background white
+            &:last-child
+                color primaryFontDarkColor
+                background white
+
+@media (min-width 66rem)
+    .ServicesContainer
+        justify-content flex-start
+        &-article
+            width 23.33%
             &:nth-child(odd)
                 color primaryFontLightColor
                 background primaryGrayColor
@@ -39,13 +54,3 @@
             &:last-child
                 color primaryFontDarkColor
                 background white
-
-@media (min-width 48rem)
-    .ServicesContainer
-        padding-bottom 200px
-
-@media (min-width 66rem)
-    .ServicesContainer
-        justify-content flex-start
-        &-article
-            width 23.33%

@@ -8,9 +8,10 @@ head
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,200")
     link(rel="stylesheet", href="./css/styles.css")
 body.MainContent
-    include ../header/template.jade
-    include ../sectionslider/template.jade
-    include ../sectiondescription/template.jade
+    div(class="Page-wrap")
+        include ../header/template.jade
+        include ../sectionslider/template.jade
+        include ../sectiondescription/template.jade
     include ../footer/template.jade
     script(src="http://code.jquery.com/jquery-1.11.1.min.js")
     script(src="js/jquery.mobile.custom.min.js")

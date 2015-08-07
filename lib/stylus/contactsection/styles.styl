@@ -1,35 +1,45 @@
 .ContactSection
     font-family 'Titillium Web'
     width 100%
-    margin 60px 0 0 0
-    padding-bottom 30px
+    margin 0
     &-title
         font-weight 200
         font-size 2rem
         margin 0 auto
-        padding 1rem 0
+        padding 0
+        padding-top .5rem
+        padding-bottom .5rem
         width 90%
     &-inputText
         font-size 1.2rem
         display block
-        padding 1.5rem 0
-        width 90%
-        height 2rem
+        width 80%
+        height 3rem
         box-sizing border-box
         margin .5rem auto
         border none
-        border-bottom 1px solid logoRedColor
+        border-bottom 2px solid logoRedColor
         border-radius 0
+        transition border 1s ease
+        &:invalid
+            border-bottom 2px solid logoRedColor
+        &:valid
+            border-bottom 2px solid primaryGrayColor
     &-message
         font-size 1.2rem
-        width 90%
+        width 80%
         height 120px
         display block
         margin .5rem auto
         box-sizing border-box
         border none
-        border-bottom 1px solid logoRedColor
+        border-bottom 2px solid logoRedColor
         border-radius 0
+        transition border 1s ease
+        &:invalid
+            border-bottom 2px solid logoRedColor
+        &:valid
+            border-bottom 2px solid primaryGrayColor
     &-button
         background primaryGrayLightColor
         font-size 1.5rem
@@ -40,9 +50,5 @@
         height 50px
         padding 0
         border-radius 0
-        width 90%
+        width 80%
         margin .5rem auto
-
-@media (min-width 48rem)
-    .ContactSection
-        padding-bottom 230px

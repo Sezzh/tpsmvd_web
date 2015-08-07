@@ -1,7 +1,7 @@
 .SectionSliderContainer
     font-family 'Titillium Web'
     height 60vh
-    margin-top 60px
+    margin 0
     overflow hidden
     width 100%
     position relative
@@ -47,6 +47,7 @@
     height 5px
     display flex
     &-button
+        background primaryGrayLightColor
         box-sizing border-box
         border none
         border-right 1px solid gray
@@ -57,6 +58,7 @@
         transition background .5s ease
         &:last-child
             border-right none
+
 @media (min-width 40em)
     .SectionSliderContainer
         &-sliderDescription

@@ -8,8 +8,9 @@ head
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,200")
     link(rel="stylesheet", href="./css/styles.css")
 body.MainContent
-    include ../header/template.jade
-    include ../mapsection/template.jade
+    div(class="Page-wrap")
+        include ../header/template.jade
+        include ../mapsection/template.jade
     include ../footer/template.jade
     script(src="http://maps.google.com/maps/api/js?sensor=true")
     script(src="./js/gmaps.js")

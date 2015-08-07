@@ -1,7 +1,7 @@
-form(action="", class="ContactSection")
-    h2(class="ContactSection-title") En que podemos ayudar
-    input(type="text", required, placeholder="Tu nombre", class="ContactSection-inputText", data-contact="name")
-    input(type="email", required, placeholder="tucorreo@email.com" class="ContactSection-inputText", data-contact="email")
-    input(type="text", class="ContactSection-inputText", placeholder="Asunto...", data-contact="subject")
-    textarea(placeholder="Tu mensaje", data-contact="message", class="ContactSection-message")
-    button(class="ContactSection-button", data-contactButton) Enviar
+form(action="", class="ContactSection", data-contact="form")
+    h2(class="ContactSection-title") En que podemos ayudarte.
+    input(type="text", placeholder="Tu nombre", class="ContactSection-inputText", data-contact="name", required)
+    input(type="email", placeholder="tucorreo@email.com", class="ContactSection-inputText", data-contact="email", required)
+    input(type="text", class="ContactSection-inputText", placeholder="Asunto...", data-contact="subject", required)
+    textarea(placeholder="Tu mensaje", data-contact="message", class="ContactSection-message", required)
+    input(type="submit", class="ContactSection-button", data-contactButton, value="Enviar")
